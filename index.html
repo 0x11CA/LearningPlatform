@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learning Platform</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="ico.ico" type="image/x-icon">
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Programming Platform</a>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="adminlogin.php">Admin</a></li>
+            <li><a href="login.php">Student</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <h2 id="text"><span>It's time to study</span><br>Programming</h2>
+        <a href="#" id="btn" onclick="scrollToEnd()">Explore</a>
+    </section>
+
+    <div class="sec">
+        <h2>Welcome To Our Platform</h2>
+        <p>Our platform is designed to help you learn programming in a fun, interactive, and effective way. Whether you're a complete beginner or an experienced programmer looking to level up your skills, we have something for you.</p>
+        <p>Our website offers a wide range of courses and tutorials, covering popular programming languages like Python, Java, JavaScript, and more. Our courses are created by industry experts and experienced instructors, who will guide you through each step of the learning process. You'll learn through hands-on coding exercises, interactive quizzes, and real-world projects that will give you practical experience in programming.</p>
+        <p>One of the key features of our website is our personalized learning experience. We understand that everyone learns at their own pace and in their own way, which is why we offer a range of learning resources and tools to help you learn in a way that suits you best. You can choose from video lectures, written tutorials, or even interactive coding challenges, depending on your preferences.</p>
+    </div>
+
+    <footer id="footer">
+        <h2 style="color: #fff;">Contact Us</h2>
+        <p style="color: #fff;">If you have any questions or feedback, please feel free to get in touch with us using the following methods</p>
+        <ul>
+            <li><a href="https://www.instagram.com/kffv" class="active" target="_blank">Instagram</a></li>
+            <li><a href="https://wa.me/+96897797959" class="active" target="_blank">WhatsApp</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -.1 + '%';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * .5 + 'px';
+        })
+    </script>
+  <script  src="./script.js"></script>
+</body>
+</html>
+
